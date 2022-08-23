@@ -73,13 +73,23 @@ h1, h2, h3{
     line-height: 1.8;
 }
 #preloader{
-    background: #000 url('../images/output-onlinegiftools.gif') no-repeat center center;
-    background-size: 20%;
-    height: 100vh;
     width: 100%;
-    position: fixed;
-    z-index: 100;
-  }
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader-inner{
+  background: url('../images/output-onlinegiftools.gif') no-repeat center center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
 /* header */
 #header{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('../images/hero.jpg') center/cover no-repeat fixed;
